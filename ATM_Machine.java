@@ -1,6 +1,7 @@
-/* Summary: An ATM machine that has 10 accounts. Prompts user for account ID
- * if account id is not valid, request different id, once ID accepted, display menu with
- * various options (withdraw deposit, view balance, exit menu
+/* Program: ATM Machine
+ * Summary: An ATM machine that has 10 accounts. The program Prompts the user for an account ID.
+ * If the account ID is not valid, the program requests a different id. Once the ID is accepted, the program displays the menu with
+ * various options (withdraw deposit, view balance, exit menu).
  * File: ATM_Machine.java
  * Author: Lee Tompkins 
  * Date: Jul 12 2016
@@ -39,16 +40,16 @@ public class ATM_Machine {
 		boolean xx = true; // boolean for while loop in menu
 		do {
 			xx = true; // reset menu boolean
-			System.out.print("Enter in an account ID number");
+			System.out.print("Enter in an account ID number     ");
 			int accID = input.nextInt();
 			if (accID < 0 || accID > 9) { // Check if ID valid
 				System.out.println("Invalid Account ID number");
 			} else {
 				while (xx) {
-				System.out.println("Enter 1 to view current balance");
-				System.out.println("Enter 2 to make a withdraw");
-				System.out.println("Enter 3 to make a deposit");
-				System.out.println("Enter 4 to exit");
+				System.out.println("Enter 1 to view current balance     ");
+				System.out.println("Enter 2 to make a withdraw     ");
+				System.out.println("Enter 3 to make a deposit     ");
+				System.out.println("Enter 4 to exit     ");
 				System.out.print("");
 				int menuOption = input.nextInt();
 				
@@ -59,13 +60,13 @@ public class ATM_Machine {
 					break;
 				}
 				case 2: { 
-					System.out.print("Enter in an ammount to withdraw");
+					System.out.print("Enter in an ammount to withdraw     ");
 					double withdrawAmount = input.nextDouble();
 					accArray[accID].withdraw(withdrawAmount); // Withdraw said amount
 					break;
 				}
 				case 3: {
-					System.out.print("Enter an ammount to Deposit");
+					System.out.print("Enter an ammount to Deposit     ");
 					double depositAmount = input.nextDouble();
 					accArray[accID].deposit(depositAmount); // Deposit said amount
 					break;
