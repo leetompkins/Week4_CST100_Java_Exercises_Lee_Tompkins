@@ -1,4 +1,5 @@
-/* Week 4 Exercise 7.9
+/* Program : Find Smallest Element 
+ * Week 4 Exercise 7.9
  * Summary: A program that asks user to input 10 numbers, inputs numbers into an array, 
  * then finds the smallest element in the array 
  * Author: Lee Tompkins 
@@ -8,12 +9,12 @@
 
 import java.util.Scanner;
 import java.util.Arrays; // for use in sorting Array 
-public class TestSmallestElement {
+public class TestSmallestElement { // Tests the SmallestElement class funcionality 
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		double[] array = new double[10];
-		System.out.print("Enter in 10 numbers seperated by a space to return the smallest number");
+		System.out.print("Enter in 10 numbers seperated by a space to return the smallest number.     ");
 		// Put user input into an array
 		array[0] = input.nextDouble();
 		array[1] = input.nextDouble();

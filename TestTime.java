@@ -1,4 +1,5 @@
-/* Summary: A Time & TestTime class, with constructors for a time object (current time)
+/* Program: Current or Set Time 
+ *Summary: Week4 Exercise 10.1. A Time & TestTime class, with constructors for a time object (current time)
  * (elapsed time) (specified time), three getter methods, and a setter method
  * File: TestTime.java
  * Author Lee Tompkins 

@@ -1,4 +1,4 @@
-/* Summary: A BMI Class taken from Chapter 10 of Intro to Java Programming with an
+/* Summary:Week4 Exercise 10.2. A BMI Class taken from Chapter 10 of Intro to Java Programming with an
  * added constructor with specified parameters (Height in ft-in) 
  * Author: Lee Tompkins 
  * File: BMI.java

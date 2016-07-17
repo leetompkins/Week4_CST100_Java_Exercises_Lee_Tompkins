@@ -1,4 +1,5 @@
-/* Week 4 Exercise 5.39
+/* Program: Minimum sales to reach Salary
+ * Week 4 Exercise 5.39
  * Summary: A program that calculates the minimum sales needed to make 30k a year
  * with a base salary of 5k
  * Author: Lee Tompkins 
