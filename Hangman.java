@@ -1,8 +1,9 @@
-/* Week4 Exercise 7.35 
+/* Program: Hangman
+ * Week4 Exercise 7.35 
  * Summary: A game program for hangman, selects random words from array, prompts user
  * to enter one letter at a time, each letter in word unguessed is displayed as *. 
- * When guess is correct, * turns into and displays letter, tells user how many misses 
- * and asks to play another game
+ * When guess is correct, * turns into and displays the letter. Then displays to user how many misses there were 
+ * and asks the user if they want to play another game.
  * Author: Lee Tompkins 
  * File: Hangman.java
  * Date: Jul 14 2016
@@ -41,7 +42,7 @@ public class Hangman {
 				case 2: {
 					System.out.println("  ");
 					System.out.println("With " + guessCounter + " missed guesses, you guessed the word " + array[randomWordNum]); // return guesses missed and word
-					System.out.print("To play again enter 1 else enter 0 "); // request play again
+					System.out.print("To play again enter 1 else enter 0    "); // request play again
 					Scanner input = new Scanner(System.in); // new scanner
 					int continuePlay = input.nextInt(); // input for request play
 					if (continuePlay == 1) { // choose play again or exit
@@ -61,7 +62,7 @@ public class Hangman {
 	
 	public static int guessLetter(String word, char[] guessLetters) {
 		
-		System.out.print("Guess a letter for the word ");
+		System.out.print("Guess a letter for the word       ");
 		if (!printWord(word, guessLetters)) {
             return 2;
 		}
